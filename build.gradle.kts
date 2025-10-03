@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.maven.publish)
 }
 val buildNum = providers.environmentVariable("GITHUB_RUN_NUMBER")
-    .filter {"$it".isEmpty()}
+    .filter {!("$it".isEmpty())}
     .map {"-build.$it"}
     .orElse("-local")
     .getOrElse("")

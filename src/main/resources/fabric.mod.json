@@ -1,30 +1,27 @@
 {
   "schemaVersion": 1,
-  "id": "example",
+  "id": "declutter",
   "version": "${version}",
-  "name": "Example",
-  "description": "lorem ipsum",
+  "name": "Menu Declutterer",
+  "description": "MainMenuChanger rewritten from the ground up!",
   "authors": [
     "Stereo528"
   ],
   "contact": {
     "homepage": "https://stereo528.dev",
-    "sources": "https://github.com/Stereo528/fabric-template-mod",
-    "issues": "https://github.com/Stereo528/fabric-template-mod/issues"
+    "sources": "https://github.com/Stereo528/MenuDeclutterer",
+    "issues": "https://github.com/Stereo528/MenuDeclutterer/issues"
   },
   "license": "BSD-3-Clause",
-  "icon": "assets/example/icon.png",
+  "icon": "assets/declutter/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.stereo528.example.client.ExampleClient"
-    ],
-    "main": [
-      "dev.stereo528.example.Example"
+      "dev.stereo528.declutter.client.MenuDeclutterer"
     ]
   },
   "mixins": [
-    "example.mixins.json"
+    "declutter.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
