@@ -1,0 +1,28 @@
+[versions]
+# Latest Versions can be found at https://fabricmc.net/develop/
+minecraft = "1.21.9"
+fabric_loader = "0.17.2"
+fapi = "0.134.0+1.21.9"
+
+sodium = "mc1.21.9-0.7.0-fabric"
+joml = "1.10.6"  # Needed for Sodium
+modmenu = "16.0.0-rc.1"
+#emi_version = "1.1.20+1.21.1" # not updated for >1.21.1 yet
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
+fapi = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fapi" }
+
+sodium = { module = "maven.modrinth:sodium", version.ref = "sodium"}
+joml = { module = "org.joml:joml", version.ref = "joml"}
+modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu"}
+#emi = { module = "dev.emi:emi-fabric", version.ref = "emi_version"}
+
+[bundles]
+dev = ["joml", "sodium", "modmenu"]#, "emi"]
+dependencies = ["fabric_loader", "fapi"]
+
+[plugins]
+loom = { id = "fabric-loom", version = "1.11-SNAPSHOT" }
+maven_publish = { id = "maven-publish"}
