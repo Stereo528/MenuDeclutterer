@@ -32,7 +32,6 @@ dependencies {
     minecraft(libs.minecraft)
     mappings(loom.officialMojangMappings())
     modImplementation(libs.fabric.loader)
-
     modImplementation(libs.bundles.dependencies)
     modLocalRuntime(libs.bundles.dev)
 }
