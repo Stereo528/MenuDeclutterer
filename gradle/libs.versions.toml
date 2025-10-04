@@ -25,7 +25,7 @@ modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu"}
 [bundles]
 dev = ["joml", "sodium", "modmenu"]#, "emi"]
 dependencies = ["fabric_loader", "fabric_api", "midnightlib"]
-0
+
 [plugins]
 loom = { id = "fabric-loom", version = "1.11-SNAPSHOT" }
 maven_publish = { id = "maven-publish"}
